@@ -830,8 +830,8 @@ video {
   line-height: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -929,7 +929,7 @@ video {
 @font-face {
   font-family: 'Grotesk';
 
-  src: url('../src/fonts/NHaasGroteskDSPro-45Lt.woff2') format('woff2');
+  src: url('/public/fonts/NHaasGroteskDSPro-45Lt.woff2') format('woff2');
 
   font-weight: normal;
 
