@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Grotesk';
-  src: url('/public/fonts/NHaasGroteskDSPro-45Lt.woff2') format('woff2');
+  src: url('../public/fonts/NHaasGroteskDSPro-45Lt.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
