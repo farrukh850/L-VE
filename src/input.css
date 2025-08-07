@@ -21,3 +21,11 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .event-list-wrapper{
+        height: 100%;
+    }
+    .your-biography{
+        max-height: 100%;
+    }
+}

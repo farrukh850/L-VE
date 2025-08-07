@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>L-VE</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="flex items-center justify-center bg-black fixed top-0 left-0 right-0 w-full h-8 z-[1000]">
+        <a href="index.html"><img src="./images/logo.svg" alt="L-VE" class="w-8"></a>
+    </header>
+    <main>
+        <!-- Login Signup form -->
+        <div class="flex items-center justify-center h-screen bg-[#B3ACA5] px-4 lg:p-0">
+            <div class="container">
+                <div class="max-w-[469px] w-full mx-auto">
+                    <div class="flex items-center gap-4">
+                        <button id="signupTab" class="text-[9px] leading-[13px] text-black uppercase tab-active tracking-[1.45px]">Sign Up</button>
+                        <button id="loginTab" class="text-[9px] leading-[13px] text-[#6A6A6A] uppercase tracking-[1.45px]">Log In</button>
+                    </div>
+                    <!-- Sign Up Form -->
+                    <form id="signupForm" action="" class="mt-10 flex flex-col transition-opacity duration-200 ease-in-out" style="opacity: 1;">
+                        <input type="text" class="h-5 border-b border-black pb-[5px] w-full bg-transparent text-[#060606] text-[9px] leading-[13px] placeholder:text-[#060606] tracking-[1.45px] focus:outline-none mb-[25px] uppercase" placeholder="John mayer">
+                        <input type="email" class="h-5 border-b border-black pb-[5px] w-full bg-transparent text-[#060606] text-[9px] leading-[13px] placeholder:text-[#060606] tracking-[1.45px] focus:outline-none mb-[25px] uppercase" placeholder="Johnmayer.21@gmail.com">
+                        <input type="text" class="h-5 border-b border-black/40 pb-[5px] w-full bg-transparent text-[#060606] text-[9px] leading-[13px] placeholder:text-[#060606]/40 tracking-[1.45px] focus:outline-none mb-11 uppercase" placeholder="l-ve.co/artistname">
+                        <button type="submit" class="flex items-center relative gap-1.5 w-full h-6 justify-center"><img src="images/plus.svg" alt="Plus" class="relative z-50"><p class="text-[9px] leading-[13px] text-white uppercase relative z-50 tracking-[1.45px]">Continue</p><div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full"><img src="./images/skew-rec2.svg" class="w-full h-full object-contain" alt="Skewed Rectangle"></div></button>
+                    </form>
+                    <!-- Login Form (Hidden by default) -->
+                    <form id="loginForm" action="" class="mt-10 hidden transition-opacity duration-200 ease-in-out" style="opacity: 0;">
+                        <input type="email" class="h-5 border-b border-black pb-[5px] w-full bg-transparent text-[#060606] text-[9px] leading-[13px] placeholder:text-[#060606] tracking-[1.45px] focus:outline-none mb-[25px] uppercase" placeholder="Johnmayer.21@gmail.com">
+                        <input type="password" class="h-5 border-b border-black pb-[5px] w-full bg-transparent text-[#060606] text-[9px] leading-[13px] placeholder:text-[#060606] tracking-[1.45px] focus:outline-none mb-11 uppercase" placeholder="Password">
+                        <button type="submit" class="flex items-center relative gap-1.5 w-full h-6 justify-center"><img src="images/plus.svg" alt="Plus" class="relative z-50"><p class="text-[9px] leading-[13px] text-white uppercase relative z-50 tracking-[1.45px]">Login</p><div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full"><img src="./images/skew-rec2.svg" class="w-full h-full object-contain" alt="Skewed Rectangle"></div></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <!-- Footer -->
+    <footer class="py-3 px-5 md:px-10 bg-black absolute bottom-0 left-0 right-0">
+        <!-- Mobile layout: Two rows -->
+        <div class="flex flex-col-reverse gap-2 md:hidden">
+            <div class="flex justify-center items-center">
+                <p class="text-[8px] leading-[100%] text-[#767676]">Copyright 2025® L-VE</p>
+            </div>
+            
+            <ul class="flex items-center flex-wrap gap-2 justify-center">
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Privacy Policy</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Artist Agreement</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Compliance</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Terms and Conditions</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Support</a></li>
+            </ul>
+        </div>
+        
+        <!-- Desktop layout: Original single row -->
+        <div class="hidden md:flex items-center justify-between">
+            <ul class="flex items-center gap-[11px]">
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Copyright 2025® L-VE</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Privacy Policy</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Artist Agreement</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Compliance</a></li>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Terms and Conditions</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="text-[8px] leading-[100%] text-[#767676]">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- Include the external JavaScript file -->
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
