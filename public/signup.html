@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>L-VE</title>
+</head>
+<body class="pt-5 pb-12 bg-black relative">
+    <!-- Header -->
+    <header class="bg-[#787878] bg-opacity-10  max-w-[350px] w-full rounded-full flex items-center justify-between absolute top-20 left-1/2 -translate-x-1/2 z-[10000] px-4 py-1 backdrop-blur-20 h-10">
+        <p class="text-xs text-white font-medium tracking-[3px]">L-VE</p>
+        <form action="#" class="w-24 relative">
+            <input type="text" placeholder="Search..." class="bg-white/10 rounded-full text-xs text-white  py-2 pl-8 focus:outline-none h-7 w-full placeholder:text-white">
+            <img src="./images/search.svg" alt="Search" class="absolute left-4 top-1/2 -translate-y-1/2">
+        </form>
+        <button class="text-xs text-white">Get Started</button>
+    </header>
+    <main>
+        <div class="container">
+            <div class="relative overflow-hidden rounded-[200px] w-full pt-36 pb-14 px-52 z-50 bg-black">
+                <div class="flex items-center gap-5 justify-center">
+                    <button class="w-[125px] h-[125px] rounded-[35px] flex items-center justify-center text-sm leading-5 bg-[#B09EFF]">Viewer</button>
+                    <button class="w-[125px] h-[125px] rounded-[35px] flex items-center justify-center text-sm leading-5 bg-transparent text-[#A9A9A9]">Artist</button>
+                </div>
+                <form action="#" class="flex flex-col gap-2.5 mt-11">
+                    <small class="text-[10px] text-[#D5D5D5]">Already have an account? Log in here</small>
+                    <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="First Name">
+                    <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="Last Name">
+                    <input type="email" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="E-Mail address">
+                    <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="Phone number (optional)">
+                    <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="Cardholder Name">
+                    <div class="relative">
+                        <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="Card Number">
+                        <img src="./images/cards.svg" alt="Card" class="absolute right-6 top-1/2 -translate-y-1/2">
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <div class="relative">
+                            <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300 text-center" placeholder="MM/YY">
+                        </div>
+                        <div class="relative">
+                            <input type="text" class="w-full h-16 rounded-full border border-[#4949491A]/10 backdrop-blur-md shadow-md text-sm leading-5 p-5 bg-[#2020204D]/30 placeholder:text-[#F4F2F2] focus:outline-none focus:border-[#B09EFF] transition-all  duration-300" placeholder="CVC">
+                            <img src="./images/cvc.svg" alt="CVC" class="absolute right-6 top-1/2 -translate-y-1/2">
+                        </div>
+                    </div>
+                    <input type="submit" value="Create Account" class="w-full text-center bg-[#252525] rounded-full p-5 text-base text-white cursor-pointer ">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="relative overflow-hidden rounded-[200px] -mt-20">
+                <div class="absolute bottom-0 right-0 left-0 z-10 w-full h-[267px] bg-[linear-gradient(360deg,_#0F0F0F_3.36%,_rgba(15,15,15,0.71)_21.24%,_rgba(15,15,15,0)_60.56%)]">
+
+                </div>
+                <video class="w-full h-[831px] object-cover rounded-[200px] muted-video" muted autoplay playsinline loop>
+                    <source src="./videos/home-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute top-1/2 -translate-y-1/2 left-10 right-10 text-center z-50 px-10">
+                    <h1 class="text-5xl text-white leading-4 mb-11 font-bold">TYLER HERO X THERABODY</h1>
+                </div>
+                <div class="absolute bottom-12 left-10 right-10 text-center z-50 px-10">
+                    <p class="text-base leading-4 text-white">4 Days and 26 Minutes</p>
+                    <div class="flex items-center gap-2.5 mt-6 justify-center">
+                        <p class="w-[94px] h-7 flex items-center justify-center text-sm leading-3 text-white uppercase font-medium rounded-lg bg-white bg-opacity-[2%] backdrop-blur-[10px] shadow-md">12.12.2025</p>
+                        <p class="w-[94px] h-7 flex items-center justify-center text-sm leading-3 text-white uppercase font-medium rounded-lg bg-white bg-opacity-[2%] backdrop-blur-[10px] shadow-md">7 Pm - CESt</p>
+                        <p class="w-[94px] h-7 flex items-center justify-center text-sm leading-3 text-white uppercase font-medium rounded-lg bg-white bg-opacity-[2%] backdrop-blur-[10px] shadow-md">90 Mins</p>
+                    </div>
+                    <p class="text-sm text-white leading-5 mt-6">Launched in March 2023, the Patta Cycling Team is here to enter theworld of cycling with the aim to help build a better future for the sport. Bybreaking down the incycling, the Patta Cycling Team </p>
+                    <div class="flex items-center gap-2.5 mt-6 justify-center">
+                        <button class="w-28 h-10 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-[30px] shadow-md text-sm text-white font-medium">Buy Ticket</button>
+                        <img src="./images/avatar.png" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="">
+    </footer>
+</body>
+</html>

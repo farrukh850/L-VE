@@ -2,30 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font declarations */
 @font-face {
-  font-family: 'Grotesk';
-  src: url('/fonts/Grotesk.woff2') format('woff2'),
-  url('/fonts/Grotesk.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Helvetica Now Text';
+    src: url('public/fonts/helvetica-now-text-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
-.font-Grotesk{
-    font-family: 'Grotesk';
-    font-weight: normal;
+
+@font-face {
+    font-family: 'Helvetica Now Text';
+    src: url('public/fonts/helvetica-now-text-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Text';
+    src: url('public/fonts/helveticanowtext-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+.font-regular {
+    font-weight: 400;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-bold {
+    font-weight: 700;
 }
 body{
-    font-family: 'Grotesk', sans-serif;
+    font-family: 'Helvetica Now Text' , sans-serif;
 }
 .container{
-    max-width: 1400px;
+    max-width: 857px;
     margin: 0 auto;
 }
+.backdrop-blur-20 {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
 @media (min-width: 1400px) and (max-width: 1600px) {
-    .event-list-wrapper{
-        height: 100%;
-    }
-    .your-biography{
-        max-height: 100%;
-    }
+
 }
